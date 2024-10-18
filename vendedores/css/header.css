@@ -1,0 +1,149 @@
+
+/* CSS existente */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+}
+
+.sidebar {
+    width: 250px; /* Ancho del menú lateral */
+    background-color: #2E7D32; /* Verde oscuro */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    position: fixed; /* Fijo a la izquierda */
+    height: 100%; /* Ocupa toda la altura */
+    overflow-y: auto; /* Desplazamiento vertical si es necesario */
+    z-index: 1000; /* Asegura que el menú lateral esté encima */
+}
+
+.logo h2 {
+    margin-bottom: 30px; /* Espaciado debajo del logo */
+    text-align: center; /* Centramos el texto */
+    color: white; /* Color del texto */
+    font-size: 28px; /* Tamaño aumentado para el logo */
+    line-height: 1.2; /* Altura de línea ajustada para más longitud */
+}
+
+.nav-menu {
+    flex-grow: 1; /* Para ocupar el espacio disponible */
+}
+
+.nav-menu a {
+    display: flex;
+    align-items: center;
+    color: white; /* Color de los enlaces */
+    text-decoration: none;
+    padding: 10px 0; /* Espaciado vertical en los enlaces */
+    font-size: 18px; /* Tamaño de los enlaces */
+}
+
+.nav-menu a:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo al pasar el mouse */
+}
+
+.nav-menu i {
+    margin-right: 10px; /* Espaciado entre icono y texto */
+    font-size: 18px; /* Ajusta el tamaño de los iconos para que sean más delgados */
+}
+
+.logout {
+    margin-top: auto; /* Empuja el botón de cerrar sesión hacia abajo */
+}
+
+.logout a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.logout a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px 0;
+}
+
+.header-horizontal {
+    position: fixed; /* Hacemos que el encabezado horizontal sea fijo */
+    top: 0; /* En la parte superior de la página */
+    left: 250px; /* Deja espacio para el menú lateral */
+    width: calc(100% - 250px); /* Ajusta el ancho del header horizontal */
+    background-color: white;
+    border-bottom: 2px solid #A5D6A7; /* Línea de separación en verde claro */
+    display: flex;
+    justify-content: flex-end; /* Alinea los íconos a la derecha */
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000; /* Asegúrate de que el encabezado esté encima de otros elementos */
+}
+
+.header-icons {
+    display: flex; /* Asegúrate de que los iconos estén en línea */
+}
+
+.header-icons i {
+    margin-left: 20px;
+    font-size: 20px; /* Tamaño de los iconos ajustado para ser menos ancho */
+    color: black; /* Color de los iconos */
+}
+
+.header-title {
+    color: #2E7D32; /* Color del texto */
+    font-size: 24px; /* Tamaño de fuente */
+    font-weight: bold; /* Negrita */
+    margin-right: auto; /* Para empujar los iconos hacia la derecha */
+}
+
+/* Estilos para el contenedor principal */
+.main-content {
+    margin-left: 250px; /* Espacio para el menú lateral */
+    margin-top: 60px; /* Ajusta este valor según la altura del header-horizontal */
+    padding: 20px;
+    width: calc(100% - 250px); /* Ancho del contenido igual al ancho del header horizontal */
+    background-color: transparent; /* Mantener fondo transparente */
+}
+
+/* Estilos para hacer que el menú sea responsive */
+.menu-icon {
+    display: none; /* Ocultar el icono de menú por defecto */
+    font-size: 28px; /* Tamaño del icono del menú */
+    cursor: pointer; /* Cambiar el cursor a puntero */
+    z-index: 1001; /* Asegura que el icono esté por encima de otros elementos */
+    position: absolute; /* Para posicionar el icono */
+    left: 15px; /* Espacio desde la izquierda */
+    top: 15px; /* Espacio desde la parte superior */
+}
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .sidebar {
+        transform: translateX(-100%); /* Oculta el menú lateral por defecto */
+    }
+
+    .header-horizontal {
+        left: 0; /* Ocupa todo el ancho cuando el menú está oculto */
+        width: 100%; /* Ancho completo */
+    }
+
+    .menu-icon {
+        display: block; /* Mostrar el icono de menú en pantallas pequeñas */
+    }
+
+    .main-content {
+        margin-left: 0; /* Eliminar margen cuando el menú está oculto */
+        width: 100%; /* Ancho completo del contenido */
+    }
+}
+
+/* Ocultar el título en pantallas pequeñas */
+@media (max-width: 768px) {
+    .mobile-hidden {
+        display: none; /* Oculta el elemento */
+    }
+}

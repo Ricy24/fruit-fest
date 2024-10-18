@@ -1,0 +1,308 @@
+/* Estilo general del cuerpo */
+header {
+    background: #dfe0df;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+body {
+    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+/* Fondo animado con frutas cayendo */
+.fruit {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        top: -50px;
+        opacity: 1;
+    }
+    100% {
+        top: 100%;
+        opacity: 0;
+    }
+}
+
+/* Estilo del contenedor */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Estilos para los encabezados */
+h1, h2, h3 {
+    color: #333;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Estilo para los párrafos */
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+    font-family: 'Georgia', serif;
+}
+
+/* Estilo para los enlaces */
+a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Estilo para listas */
+ul {
+    margin-left: 20px;
+    color: #555;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Estilo para el logo en la esquina superior derecha */
+#logo {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #28a745; /* Color verde */
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+#logo:hover {
+    transform: scale(1.1);
+}
+
+/* Estilo para el botón de volver a la tienda */
+#back-button {
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    background-color: #d4edda; /* Verde claro */
+    color: #155724; /* Texto en verde oscuro */
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#back-button:hover {
+    background-color: #c3e6cb;
+    transform: scale(1.05);
+}
+
+#back-button i {
+    margin-right: 8px;
+}
+
+/* Estilo para el botón Fruit Fest */
+.fruit-fest-button {
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    background-color: #28a745; /* Verde */
+    color: #fff; /* Texto blanco */
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fruit-fest-button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+.fruit-fest-button i {
+    margin-right: 8px;
+}
+
+/* TERMINOS Y CONDICIONES */
+header {
+    background: #eceeec;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.header-content {
+    position: relative;
+    z-index: 1;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    animation: fadeIn 2s ease-out;
+}
+
+header p {
+    font-size: 1.2em;
+    margin: 10px 0 0;
+    animation: fadeIn 2s ease-out 0.5s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.terms-content {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.terms-section {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.terms-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.terms-section h2 {
+    margin-top: 0;
+    font-size: 1.8em;
+    color: #4CAF50;
+    animation: slideIn 0.5s ease-out;
+}
+
+.terms-section p {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+/* Estilos Responsive */
+
+/* Para dispositivos móviles (hasta 768px) */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    #logo {
+        font-size: 20px;
+        top: 5px;
+        right: 5px;
+    }
+
+    #back-button, .fruit-fest-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .terms-section h2 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+/* Para dispositivos muy pequeños (hasta 480px) */
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+        padding: 5px;
+    }
+
+    #logo {
+        font-size: 18px;
+        top: 0;
+        right: 0;
+    }
+
+    #back-button, .fruit-fest-button {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    .terms-section h2 {
+        font-size: 1.2em;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}

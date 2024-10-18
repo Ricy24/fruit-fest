@@ -1,0 +1,208 @@
+  /* Estilos adicionales */
+  .container-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.separator {
+    height: 40px; /* Ajusta la altura según el tamaño del contenedor */
+    border-left: 2px solid #ccc; /* Línea gris */
+    margin: 0 20px; /* Espacio alrededor de la línea */
+}
+
+.logo-secondary {
+    max-width: 80px; /* Ajusta el tamaño según sea necesario */
+}
+
+/* Estilo para el botón 'Trabaja con nosotros' */
+.btn-work-with-us {
+    padding: 7px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-work-with-us:hover {
+    background-color: #45a049;
+}
+
+.address-container {
+    cursor: pointer;
+}
+
+.address-form {
+    display: none;
+    /* Otros estilos para el formulario */
+}
+ /* Contenedor de la barra de búsqueda para ocupar todo el ancho disponible */
+ .search-form {
+        position: relative; /* Posiciona el contenedor de manera relativa para poder posicionar el botón dentro de él */
+        flex: 1;
+        display: flex;
+        align-items: center;
+        margin: 0 20px; /* Ajusta el margen según sea necesario */
+    }
+    
+    /* Estilo para el campo de búsqueda */
+    .search-form input[type="search"] {
+        width: 100%;
+        padding: 12px 60px 12px 20px; /* Espacio adicional para el botón a la derecha */
+        border: 2px solid #ddd; /* Color del borde */
+        border-radius: 50px; /* Borde redondeado */
+        font-size: 16px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+        transition: all 0.3s ease; /* Transición suave */
+    }
+    
+    /* Estilo para el campo de búsqueda al hacer foco */
+    .search-form input[type="search"]:focus {
+        border-color: #4CAF50; /* Cambia el color del borde al hacer foco */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al hacer foco */
+        outline: none; /* Elimina el contorno por defecto */
+    }
+    
+    /* Estilo para el botón de búsqueda */
+    .search-form button.btn-search {
+        position: absolute; /* Posiciona el botón de manera absoluta dentro del contenedor de búsqueda */
+        right: 10px; /* Espacio desde el borde derecho del contenedor */
+        top: 50%; /* Centra verticalmente */
+        transform: translateY(-50%); /* Ajusta para el centrado vertical exacto */
+        background-color: #4CAF50; /* Color de fondo del botón */
+        border: none;
+        color: white;
+        padding: 8px 18px; /* Ajusta el padding según sea necesario */
+        border-radius: 50px; /* Borde redondeado */
+        cursor: pointer;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background-color 0.3s ease; /* Transición suave */
+    }
+    
+    /* Estilo para el botón de búsqueda al pasar el cursor */
+    .search-form button.btn-search:hover {
+        background-color: #45a049; /* Color de fondo al pasar el cursor */
+    }
+    
+    /* Estilo para el ícono dentro del botón */
+    .search-form button.btn-search i {
+        font-size: 18px; /* Ajusta el tamaño del ícono si es necesario */
+    }
+/* Estilo para ocultar la barra de búsqueda y mostrar solo el ícono en dispositivos móviles */
+@media (max-width: 768px) {
+.search-form input[type="search"] {
+    display: none; /* Ocultar el input en dispositivos móviles */
+}
+.search-form button.btn-search {
+    position: relative; /* Posiciona el botón en lugar del input */
+}
+.search-form.active input[type="search"] {
+    display: block; /* Muestra el input cuando se activa la búsqueda */
+}
+.search-form.active button.btn-search {
+    display: none; /* Oculta el botón cuando el input está activo */
+}
+}
+
+    /* Estilo para el contenedor del carrito */
+.content-shopping-cart {
+display: flex;
+align-items: center;
+margin-right: 20px; /* Espacio entre íconos */
+}
+
+.content-shopping-cart a {
+display: flex;
+align-items: center;
+color: #4CAF50; /* Color del ícono y texto */
+text-decoration: none; /* Elimina el subrayado */
+transition: color 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
+}
+
+.content-shopping-cart i {
+font-size: 20px; /* Tamaño del ícono del carrito */
+margin-right: 8px; /* Espacio entre el ícono y el número */
+transition: transform 0.3s ease; /* Transición suave */
+}
+
+.content-shopping-cart span.number {
+font-size: 14px; /* Tamaño del texto del número */
+display: inline; /* Asegura que el número se muestre en línea con el ícono */
+}
+
+
+/* Efecto de hover para los íconos */
+.content-shopping-cart a:hover i,
+.content-wishlist a:hover i {
+color: #45a049; /* Color del ícono al pasar el cursor */
+transform: scale(1.1); /* Aumento del tamaño del ícono al pasar el cursor */
+}
+
+/* Estilos para el enlace 'Tienda' */
+.menu .dropdown {
+position: relative;
+display: inline-block;
+}
+
+.menu .dropdown-menu {
+display: none;
+position: absolute;
+background-color: #fff;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+border-radius: 4px;
+top: 100%;
+left: 0;
+z-index: 1000;
+padding: 10px;
+min-width: 200px; /* Ajusta el ancho mínimo del contenedor */
+}
+
+.menu .dropdown-menu .category-item {
+display: flex;
+align-items: center; /* Alinea verticalmente el ícono y el texto */
+text-decoration: none; /* Elimina el subrayado del texto */
+color: #333; /* Color del texto */
+margin-bottom: 10px; /* Espacio entre los ítems */
+position: relative;
+}
+
+.menu .dropdown-menu .category-item:last-child {
+margin-bottom: 0; /* Elimina el margen inferior del último ítem */
+}
+
+.menu .dropdown-menu .category-icon {
+font-size: 24px; /* Tamaño de los íconos ajustado */
+color: #4CAF50; /* Color del ícono */
+margin-right: 10px; /* Espacio entre el ícono y el texto */
+line-height: 1; /* Alinea el ícono con el texto */
+}
+
+.menu .dropdown-menu .category-text {
+font-size: 14px; /* Tamaño del texto ajustado */
+display: inline-block; /* Alinea el texto correctamente */
+}
+
+.menu .dropdown:hover .dropdown-menu {
+display: block;
+}
+
+.menu .dropdown-menu .category-item:hover {
+background-color: #f0f0f0; /* Color de fondo al pasar el cursor */
+}
+
+.menu .dropdown-menu .category-item:hover .category-text,
+.menu .dropdown-menu .category-item:hover .category-icon {
+text-decoration: none; /* Elimina el subrayado del texto en hover */
+}
+

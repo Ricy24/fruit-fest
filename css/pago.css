@@ -1,0 +1,168 @@
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+h1 {
+    color: #4CAF50;
+    text-align: center;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+td {
+    border-bottom: 1px solid #ddd;
+}
+img {
+    max-width: 100px;
+    border-radius: 8px;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+.btn-primary {
+    background-color: #4CAF50;
+}
+.btn-primary:hover {
+    background-color: #45a049;
+}
+.btn-secondary {
+    background-color: #607d8b;
+}
+.btn-secondary:hover {
+    background-color: #546e7a;
+}
+.total {
+    font-weight: bold;
+}
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    z-index: 1000;
+    display: none;
+    width: 300px;
+    text-align: center;
+}
+.notification.success {
+    background-color: #4CAF50;
+}
+.notification.error {
+    background-color: #f44336;
+}
+
+
+
+.form-container {
+background: #ffffff; /* Fondo blanco para el formulario */
+padding: 20px;
+width: 80%;
+max-width: 700px;
+border: 1px solid #ddd;
+border-radius: 10px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+position: relative;
+margin-bottom: 20px;
+background: linear-gradient(to bottom, #ffffff 0%, #f9f9f9 100%);
+border-left: 5px solid #4caf50; /* Línea verde a la izquierda */
+}
+
+.form-container h2 {
+color: #4caf50;
+text-align: center;
+margin-bottom: 20px;
+}
+
+.form-section {
+margin-bottom: 30px;
+padding: 10px;
+border: 1px solid #ddd;
+border-radius: 8px;
+background: #f1f8e9; /* Fondo verde claro para las secciones */
+}
+
+.form-section h3 {
+color: #4caf50;
+margin-bottom: 15px;
+}
+
+.form-group {
+margin-bottom: 20px;
+}
+
+.form-group label {
+display: block;
+font-weight: bold;
+margin-bottom: 5px;
+color: #333; /* Color gris oscuro */
+}
+
+.form-group input,
+.form-group select {
+width: calc(100% - 120px); /* Ajustar el ancho para el botón */
+padding: 12px;
+border: 1px solid #ccc;
+border-radius: 5px;
+box-sizing: border-box;
+font-size: 16px;
+background-color: #f1f1f1; /* Fondo gris claro para los campos */
+margin-right: 10px; /* Espacio entre el campo y el botón */
+}
+
+.form-group input:focus,
+.form-group select:focus {
+border-color: #4caf50; /* Cambio de borde al enfocarse */
+outline: none;
+}
+
+.form-group button {
+display: inline-block;
+padding: 12px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-size: 16px;
+color: #ffffff;
+background-color: #66bb6a; /* Verde más suave */
+text-align: center;
+transition: background-color 0.3s, transform 0.3s;
+width: 100px; /* Ancho fijo para el botón */
+}
+
+.form-group button:hover {
+background-color: #57a05d; /* Verde más oscuro */
+transform: scale(1.05);
+}
+
+.btn-secondary {
+background-color: #81c784; /* Verde claro para el botón de código promocional */
+}
+
+.btn-secondary:hover {
+background-color: #66bb6a; /* Verde más oscuro en hover */
+}

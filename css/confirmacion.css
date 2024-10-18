@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background: #5cb85c;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+main {
+    padding: 20px;
+}
+.confirmacion {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+.confirmacion h2 {
+    color: #5cb85c;
+}
+.confirmacion ul {
+    list-style: none;
+    padding: 0;
+}
+.confirmacion ul li {
+    margin-bottom: 10px;
+}
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background: #5cb85c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.boton:hover {
+    background: #4cae4c;
+}
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

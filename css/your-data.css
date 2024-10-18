@@ -1,0 +1,90 @@
+/* General Styles */
+
+.container {
+    max-width: 1000px; /* Ancho máximo del contenedor */
+    margin: 20px auto; /* Centrando el contenedor */
+    padding: 20px; /* Espaciado interno */
+    background-color: #ffffff; /* Fondo blanco para la tarjeta */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.ui-w-80 {
+    width: 80px !important; /* Ancho de imagen del perfil */
+    height: auto; /* Mantener proporción */
+}
+
+/* Botones */
+.btn-default {
+    border: 1px solid rgba(24, 28, 33, 0.1); /* Borde suave */
+    background: transparent; /* Fondo transparente */
+    color: #6c757d; /* Color de texto gris oscuro */
+}
+
+.btn-outline-primary {
+    border: 1px solid #28a745; /* Borde verde claro */
+    background: transparent; /* Fondo transparente */
+    color: #28a745; /* Color de texto verde claro */
+}
+
+.btn-outline-primary:hover {
+    background: #d4edda; /* Fondo verde muy claro al pasar el cursor */
+}
+
+.btn {
+    cursor: pointer; /* Puntero al pasar sobre el botón */
+}
+
+/* Texto y Alertas */
+.text-light {
+    color: #6c757d !important; /* Color gris claro */
+}
+
+.alert {
+    border-radius: 4px; /* Bordes redondeados para alertas */
+    padding: 15px; /* Espaciado interno */
+    margin-bottom: 20px; /* Espacio debajo de la alerta */
+    background-color: #eafaf1; /* Fondo verde muy claro para alertas */
+    color: #155724; /* Color del texto verde oscuro */
+}
+
+.card {
+    background-clip: padding-box;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra más sutil */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+.row-bordered {
+    overflow: hidden;
+}
+
+.account-settings-fileinput {
+    position: absolute;
+    visibility: hidden;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}
+
+.account-settings-links .list-group-item.active {
+    font-weight: bold !important; /* Negrita para el ítem activo */
+    background: transparent !important; /* Fondo transparente */
+}
+
+.light-style .account-settings-links .list-group-item {
+    padding: 0.85rem 1.5rem; /* Espaciado interno */
+    border: 1px solid rgba(24, 28, 33, 0.03) !important; /* Borde suave */
+}
+
+.light-style .account-settings-links .list-group-item.active {
+    color: #28a745 !important; /* Color de texto verde claro para ítem activo */
+}
+
+.dark-style .account-settings-links .list-group-item {
+    padding: 0.85rem 1.5rem; /* Espaciado interno */
+    border: 1px solid rgba(255, 255, 255, 0.03) !important; /* Borde suave en modo oscuro */
+}
+
+.dark-style .account-settings-links .list-group-item.active {
+    color: #fff !important; /* Color blanco para ítem activo en modo oscuro */
+}

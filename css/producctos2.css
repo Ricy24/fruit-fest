@@ -1,0 +1,193 @@
+.notification {
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #4caf50;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    z-index: 1000;
+}
+
+.notification.show {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.notification .checkmark {
+    margin-right: 10px;
+    font-size: 18px;
+}
+.styled-add-to-cart {
+background-color: #28a745; /* Color de fondo verde */
+color: #fff; /* Color del texto */
+border: none;
+border-radius: 25px; /* Bordes redondeados */
+padding: 10px 20px; /* Espaciado interno */
+font-size: 16px; /* Tamaño de la fuente */
+font-weight: bold; /* Negrita */
+cursor: pointer;
+transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves */
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+display: inline-flex; /* Para alinear icono y texto */
+align-items: center; /* Centrar verticalmente */
+justify-content: center; /* Centrar horizontalmente */
+}
+
+.styled-add-to-cart i {
+margin-right: 8px; /* Espacio entre el icono y el texto */
+}
+
+.styled-add-to-cart:hover {
+background-color: #34c759; /* Cambiar color de fondo al pasar el cursor */
+transform: translateY(-2px); /* Efecto de elevación */
+}
+
+.styled-add-to-cart:focus {
+outline: none; /* Sin contorno al enfocar */
+}
+
+.styled-add-to-cart:active {
+background-color: #218838; /* Color al hacer clic */
+transform: translateY(0); /* Restablecer elevación */
+}
+
+
+.range-slider {
+background: linear-gradient(to right, #8BC34A, #4CAF50); /* Verde fresco y vibrante */
+border-radius: 15px;
+padding: 20px;
+text-align: center;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+margin: 20px auto;
+max-width: 80%;
+position: relative;
+overflow: hidden;
+color: #fff;
+}
+
+.range-slider p {
+font-size: 1.2rem;
+font-weight: bold;
+margin: 0;
+line-height: 1.4;
+}
+
+.range-slider::before {
+content: '';
+position: absolute;
+top: 50%;
+left: 0;
+width: 150%;
+height: 100%;
+background: rgba(0, 0, 0, 0.1);
+transform: translateY(-50%) rotate(-10deg);
+transform-origin: left top;
+z-index: 0;
+}
+
+.range-slider p {
+position: relative;
+z-index: 1;
+padding: 10px;
+}
+
+.range-slider:hover {
+background: linear-gradient(to right, #4CAF50, #8BC34A); /* Inversión de colores al pasar el ratón */
+transition: background 0.5s ease-in-out;
+}
+
+.range-slider::after {
+content: '¡Ahorra tiempo ahora!';
+position: absolute;
+bottom: 10px;
+right: 10px;
+font-size: 0.9rem;
+background: rgba(0, 0, 0, 0.5);
+padding: 5px 10px;
+border-radius: 5px;
+color: #fff;
+font-weight: bold;
+}
+
+.add-to-cart {
+background-color: #FF9800; /* Naranja fresco que resalta */
+color: #fff;
+border: none;
+border-radius: 5px;
+padding: 10px 20px;
+font-size: 1rem;
+font-weight: bold;
+cursor: pointer;
+transition: background-color 0.3s, transform 0.2s;
+margin-top: 15px;
+display: inline-flex;
+align-items: center;
+}
+
+.add-to-cart:hover {
+background-color: #FF5722; /* Naranja más intenso al pasar el ratón */
+color: #fff;
+}
+
+.add-to-cart i {
+margin-left: 8px;
+font-size: 1.2rem;
+}
+
+.add-to-cart:active {
+transform: scale(0.95);
+}
+
+
+
+.styled-special-offers {
+background-color: #FFEB3B; /* Amarillo brillante */
+color: #333;
+border: none;
+border-radius: 5px;
+padding: 10px 20px;
+font-size: 1rem;
+font-weight: bold;
+cursor: pointer;
+transition: background-color 0.3s, transform 0.2s;
+display: inline-flex;
+align-items: center;
+}
+
+.styled-special-offers:hover {
+background-color: #FBC02D; /* Amarillo más intenso al pasar el ratón */
+}
+
+.styled-special-offers i {
+margin-left: 8px;
+font-size: 1.2rem;
+}
+
+
+.styled-recipes {
+background-color: #FF9800; /* Naranja fresco */
+color: #fff;
+border: none;
+border-radius: 5px;
+padding: 10px 20px;
+font-size: 1rem;
+font-weight: bold;
+cursor: pointer;
+transition: background-color 0.3s, transform 0.2s;
+display: inline-flex;
+align-items: center;
+}
+
+.styled-recipes:hover {
+background-color: #F57C00; /* Naranja más intenso al pasar el ratón */
+}
+
+.styled-recipes i {
+margin-left: 8px;
+font-size: 1.2rem;
+}
+

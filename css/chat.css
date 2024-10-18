@@ -1,0 +1,74 @@
+    /* Estilos para la página de chat */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 0;
+        text-align: center;
+    }
+    .chat-container {
+        display: flex;
+        flex-direction: column;
+        height: 80vh;
+        margin: 20px;
+    }
+    .messages {
+        flex: 1;
+        overflow-y: auto;
+        border: 1px solid #ddd;
+        padding: 10px;
+        margin-bottom: 10px;
+        background-color: #f9f9f9;
+    }
+    .message {
+        margin-bottom: 10px;
+    }
+    .message .usuario {
+        font-weight: bold;
+    }
+    .message .vendedor {
+        color: #4CAF50;
+    }
+    .message .leido {
+        color: #999;
+    }
+    .message.sent {
+        text-align: right;
+    }
+    .message.received {
+        text-align: left;
+    }
+    .message-input {
+        display: flex;
+    }
+    .message-input input {
+        flex: 1;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+    .message-input button {
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        background-color: #4CAF50;
+        color: white;
+        cursor: pointer;
+        margin-left: 10px;
+    }
+    .message-input button:hover {
+        background-color: #45a049;
+    }
+    footer {
+        background-color: #4CAF50;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+    }

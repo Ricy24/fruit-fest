@@ -1,0 +1,218 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+h1 {
+    color: #4CAF50;
+    text-align: center;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+td {
+    border-bottom: 1px solid #ddd;
+}
+img {
+    max-width: 100px;
+    border-radius: 8px;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+.btn-primary {
+    background-color: #4CAF50;
+}
+.btn-primary:hover {
+    background-color: #45a049;
+}
+.btn-danger {
+    background-color: #f44336;
+}
+.btn-danger:hover {
+    background-color: #e53935;
+}
+.btn-secondary {
+    background-color: #607d8b;
+}
+.btn-secondary:hover {
+    background-color: #546e7a;
+}
+.delete-form {
+    display: inline;
+}
+.update-form {
+    display: inline;
+}
+.quantity-controls {
+    display: flex;
+    align-items: center;
+}
+.quantity-controls button {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 1;
+}
+.quantity-controls input {
+    width: 40px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+.total {
+    font-weight: bold;
+    color: #4CAF50;
+}
+.fa {
+    font-size: 16px;
+}
+
+.btn-pay-container {
+display: flex;
+justify-content: flex-start;
+margin-bottom: 20px;
+}
+
+.btn-pay {
+display: inline-flex;
+align-items: center; /* Alinea el texto y el ícono verticalmente */
+padding: 10px 20px;
+font-size: 16px;
+border: none;
+border-radius: 8px;
+color: #fff;
+background-color: #ff9800; /* Naranja que evoca frescura y frutas */
+text-decoration: none;
+text-align: center;
+cursor: pointer;
+transition: background-color 0.3s, transform 0.3s;
+position: relative;
+overflow: hidden;
+outline: none; /* Elimina el outline del botón */
+box-shadow: none; /* Elimina cualquier sombra predeterminada */
+}
+
+.btn-pay:hover {
+background-color: #f57c00; /* Naranja más oscuro al pasar el cursor */
+transform: scale(1.05); /* Efecto de escala al pasar el cursor */
+box-shadow: none; /* Asegura que no haya sombra al pasar el cursor */
+}
+
+.btn-pay:active {
+background-color: #ef6c00; /* Naranja aún más oscuro al hacer clic */
+transform: scale(0.98); /* Efecto de "presionar" al hacer clic */
+box-shadow: none; /* Asegura que no haya sombra al hacer clic */
+}
+
+.btn-pay .truck {
+width: 24px;
+height: 24px;
+background: url('https://cdn-icons-png.flaticon.com/512/1144/1144706.png') no-repeat center center;
+background-size: contain;
+margin-left: 10px; /* Espacio entre el texto y el ícono */
+}
+
+.fondo {
+margin-bottom: 20px;
+}
+
+/* Estilos del botón de continuar comprando */
+.btn-continue-container {
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.btn-continue {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px; /* Tamaño del botón */
+    height: 50px; /* Tamaño del botón */
+    background-color: #8bc34a; /* Verde que evoca frescura y salud */
+    border: none;
+    border-radius: 50%; /* Botón circular */
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-continue:hover {
+    background-color: #7cb342; /* Verde más oscuro al pasar el cursor */
+    transform: scale(1.05); /* Efecto de escala al pasar el cursor */
+}
+
+.btn-continue:active {
+    background-color: #689f38; /* Verde aún más oscuro al hacer clic */
+    transform: scale(0.98); /* Efecto de "presionar" al hacer clic */
+}
+
+.btn-continue .icon {
+    font-size: 24px; /* Tamaño del ícono */
+}
+
+.tooltip {
+    visibility: hidden;
+    width: 180px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    bottom: 125%; /* Posiciona el tooltip arriba del botón */
+    left: 50%;
+    margin-left: -90px; /* Centra el tooltip respecto al botón */
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: 1;
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+}
+
+.tooltip-arrow {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #333 transparent transparent transparent;
+}

@@ -1,0 +1,195 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+.filters {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.filters input, .filters select {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.product-container {
+display: flex; /* Usar flexbox para alinear horizontalmente */
+flex-direction: row; /* Alinear en fila */
+overflow-x: auto; /* Desplazamiento horizontal si es necesario */
+gap: 20px; /* Espacio entre las tarjetas */
+padding: 10px 0; /* Espacio interno */
+}
+
+.product {
+background-color: white;
+border: 1px solid #ddd;
+border-radius: 10px;
+padding: 15px;
+margin-bottom: 20px;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+max-width: 300px;
+}
+
+.product img {
+max-width: 100%;
+height: auto;
+border-radius: 10px 10px 0 0;
+margin-bottom: 10px;
+}
+
+.product-content {
+padding: 10px;
+}
+
+.product h2 {
+font-size: 20px;
+margin: 0 0 10px 0;
+color: #000;
+}
+
+.product-type {
+background-color: #000;
+color: #fff;
+border: none;
+border-radius: 20px;
+padding: 5px 10px;
+font-size: 14px;
+cursor: pointer;
+float: right;
+}
+
+.product .descripcion {
+color: #666;
+font-size: 14px;
+margin-bottom: 10px;
+}
+
+.price-category {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.product .precio {
+font-size: 20px;
+color: #000;
+font-weight: bold;
+}
+
+.product .categoria {
+color: #7f8c8d;
+font-size: 12px;
+font-style: italic;
+}
+
+.vendedor-info {
+margin-top: 15px;
+}
+
+.ubicacion {
+font-size: 14px;
+color: #7f8c8d;
+margin-bottom: 10px;
+}
+
+.vendedor-contacto {
+display: flex;
+align-items: center;
+}
+
+.vendedor-foto {
+width: 50px;
+height: 50px;
+border-radius: 50%;
+margin-right: 10px;
+}
+
+.vendedor-nombre {
+font-size: 16px;
+font-weight: bold;
+}
+
+.vendedor-botones {
+display: flex;
+justify-content: flex-start; /* Alinea los botones a la izquierda */
+gap: 5px; /* Espacio pequeño entre los botones */
+margin-top: 10px;
+}
+
+.boton-llamar, .boton-mensaje {
+padding: 10px;
+border-radius: 0; /* Quita las esquinas redondeadas */
+text-decoration: none;
+color: black; /* Cambia el color del texto a negro */
+background-color: white; /* Fondo blanco */
+border: 1px solid black; /* Borde negro */
+}
+
+.boton-llamar:hover, .boton-mensaje:hover {
+background-color: #f1f1f1; /* Color de fondo ligeramente diferente al pasar el cursor */
+}
+
+
+/* Estilos generales del modal */
+/* Estilos del modal */
+.modal-content {
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.modal-header {
+background-color: #007bff;
+color: #fff;
+border-bottom: 1px solid #dee2e6;
+}
+
+.modal-title {
+font-weight: bold;
+}
+
+.btn-close {
+background-color: #fff;
+border: none;
+}
+
+.modal-footer .btn {
+border-radius: 5px;
+}
+
+.modal-footer .btn-primary {
+background-color: #28a745;
+border-color: #28a745;
+}
+
+.modal-footer .btn-secondary {
+background-color: #6c757d;
+border-color: #6c757d;
+}
+
+.mb-3 label {
+font-weight: bold;
+}
+
+.form-control {
+border-radius: 5px;
+}
+
+select {
+appearance: none;
+padding: 10px;
+border-radius: 5px;
+background: #f8f9fa;
+}
+
+select:focus {
+outline: none;
+box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}

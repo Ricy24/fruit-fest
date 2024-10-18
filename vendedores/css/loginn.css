@@ -1,0 +1,240 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente moderna */
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: row; /* Por defecto, fila en pantallas grandes */
+}
+
+.form-section {
+    flex: 1;
+    padding: 60px; /* Mayor espacio interno en pantallas grandes */
+    box-sizing: border-box;
+    background-color: #f5f5dc; /* Color beige */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-section {
+    flex: 1;
+    overflow: hidden; /* Ocultar desbordamiento de imágenes */
+    border-radius: 0 30px 30px 0; /* Border radius más grande */
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajustar imagen al contenedor */
+}
+
+.main-title {
+    font-size: 5rem; /* Tamaño más grande */
+    color: #4CAF50; /* Color verde */
+    text-align: center;
+    margin: 30px 0; /* Espaciado alrededor del título */
+    font-weight: bold; /* Negrita */
+}
+
+.subtitle {
+    color: #4CAF50; /* Color verde */
+    margin-bottom: 40px; /* Mayor separación abajo del título */
+    font-size: 2.5rem; /* Tamaño de fuente más grande */
+    font-weight: bold; /* Negrita */
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+.form-group {
+    margin-bottom: 25px; /* Espaciado entre campos */
+    width: 100%; /* Ancho completo */
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px; /* Espaciado abajo de la etiqueta */
+}
+
+.form-group input {
+    width: 100%; /* Ancho completo del contenedor */
+    padding: 15px; /* Mayor espacio interno */
+    border: 2px solid #ccc;
+    border-radius: 15px; /* Border radius más grande */
+    box-sizing: border-box;
+    font-size: 1.2rem; /* Tamaño de fuente más grande */
+}
+
+.btn-submit {
+    background-color: #388E3C; /* Verde oscuro */
+    color: #fff;
+    border: none;
+    padding: 20px 40px; /* Mayor tamaño del botón */
+    border-radius: 30px; /* Border radius más grande */
+    cursor: pointer;
+    font-size: 1.2rem; /* Tamaño de fuente más grande */
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #66BB6A; /* Verde más claro al pasar el mouse */
+}
+
+.notification {
+    padding: 15px; /* Mayor espacio interno */
+    margin-bottom: 25px; /* Mayor separación entre notificaciones */
+    border-radius: 10px; /* Border radius más grande */
+}
+
+.notification.success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.notification.error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+.login-link {
+    margin-top: 30px; /* Espaciado arriba del enlace de inicio de sesión */
+    text-align: center;
+}
+
+.login-link a {
+    color: #388E3C; /* Color verde */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+.password-strength {
+    margin-top: 15px; /* Mayor espaciado arriba del indicador de contraseña */
+    text-align: center;
+}
+
+.password-strength #strength-bar {
+    height: 7px; /* Mayor altura de la barra */
+    width: 100%;
+    border-radius: 7px; /* Border radius más grande */
+    background-color: #ddd;
+    margin-top: 5px;
+}
+
+.password-strength .poor {
+    background-color: #f44336; /* Rojo */
+}
+
+.password-strength .moderate {
+    background-color: #ff9800; /* Naranja */
+}
+
+.password-strength .strong {
+    background-color: #4caf50; /* Verde */
+}
+
+.password-strength #strength-icon {
+    font-size: 2rem; /* Tamaño de ícono más grande */
+    margin-right: 10px;
+}
+
+.password-strength #strength-text {
+    font-size: 1.2rem; /* Tamaño de texto más grande */
+}
+
+/* Estilos para pantallas móviles */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Cambia la dirección del contenedor en móviles */
+        height: 100vh; /* Asegura que el contenedor ocupe toda la altura de la pantalla */
+        width: 100vw; /* Asegura que el contenedor ocupe todo el ancho de la pantalla */
+    }
+
+    .form-section {
+        padding: 20px; /* Reduce el espacio interno en móviles */
+        flex: 1; /* Asegura que la sección del formulario ocupe todo el espacio disponible */
+        height: 100vh; /* Ocupa toda la altura de la pantalla en móviles */
+        box-sizing: border-box;
+        overflow-y: auto; /* Permite el desplazamiento si el contenido es mayor que la pantalla */
+    }
+
+    .image-section {
+        display: none; /* Oculta la sección de imágenes en móviles */
+    }
+
+    .main-title {
+        font-size: 3rem; /* Tamaño más pequeño para móviles */
+        margin: 20px 0; /* Reduce el espaciado alrededor del título */
+    }
+
+    .subtitle {
+        font-size: 1.5rem; /* Tamaño de fuente más pequeño */
+        margin-bottom: 20px; /* Reduce la separación abajo del título */
+    }
+
+    .form-group {
+        margin-bottom: 15px; /* Reduce el espaciado entre campos */
+    }
+
+    .form-group input {
+        padding: 10px; /* Reduce el espacio interno */
+        font-size: 1rem; /* Tamaño de fuente más pequeño */
+    }
+
+    .btn-submit {
+        padding: 15px 30px; /* Reduce el tamaño del botón */
+        font-size: 1rem; /* Tamaño de fuente más pequeño */
+    }
+
+    .notification {
+        margin-bottom: 15px; /* Reduce la separación entre notificaciones */
+    }
+
+    .password-strength #strength-bar {
+        height: 5px; /* Reduce la altura de la barra */
+    }
+
+    .password-strength #strength-icon {
+        font-size: 1.5rem; /* Tamaño de ícono más pequeño */
+    }
+
+    .password-strength #strength-text {
+        font-size: 1rem; /* Tamaño de texto más pequeño */
+    }
+}
+
+
+
+
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+.form-section {
+    flex: 1;
+    padding: 60px; /* Mayor espacio interno */
+    box-sizing: border-box;
+    background-color: #f5f5dc; /* Color beige */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
