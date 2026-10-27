@@ -1,4 +1,5 @@
 <?php
+require_once dirname(__DIR__) . '/secrets_loader.php';
 require '../vendor/autoload.php'; // PHPMailer
 
 use PHPMailer\PHPMailer\PHPMailer;
@@ -65,7 +66,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 $mail->Host = 'smtp.office365.com';
                 $mail->SMTPAuth = true;
                 $mail->Username = 'fruitfestautomatico@outlook.com';
-                $mail->Password = 'REMOVED_SMTP_PASSWORD';
+                $mail->Password = sf_secret('smtp.fruitfestautomatico@outlook.com');
                 $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
                 $mail->Port = 587;
                 $mail->setFrom('fruitfestautomatico@outlook.com', 'Fruit Fest');

@@ -1,4 +1,5 @@
 <?php
+require_once dirname(__DIR__) . '/secrets_loader.php';
 session_start();
 require_once 'vendor/autoload.php';
 use PHPMailer\PHPMailer\PHPMailer;
@@ -25,8 +26,8 @@ class Database {
 
 // Configuración de Google Client
 $client = new Google_Client();
-$client->setClientId('497685531346-jeihopj7ho5416gcc824mim63crbftmm.apps.googleusercontent.com');
-$client->setClientSecret('REMOVED_GOOGLE_CLIENT_SECRET');
+$client->setClientId(sf_secret('google_client_id'));
+$client->setClientSecret(sf_secret('google_client_secret'));
 $client->setRedirectUri('http://localhost/prueba/google-callback.php');
 $client->addScope('email');
 $client->addScope('profile');
@@ -95,7 +96,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         $mail->Host = 'smtp.office365.com';  // Cambia esto por tu servidor SMTP
                         $mail->SMTPAuth = true;
                         $mail->Username = 'frutasverdurasfruitfest@outlook.com';  // Cambia esto por tu email
-                        $mail->Password = 'REMOVED_SMTP_PASSWORD';  // Cambia esto por tu contraseña de email
+                        $mail->Password = sf_secret('smtp.frutasverdurasfruitfest@outlook.com');  // Cambia esto por tu contraseña de email
                         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
                         $mail->Port = 587;
 

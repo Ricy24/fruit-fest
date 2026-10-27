@@ -1,4 +1,5 @@
 <?php
+require_once dirname(__DIR__) . '/secrets_loader.php';
 session_start();
 
 // Incluir archivo de configuración de la base de datos
@@ -29,7 +30,7 @@ $ciudad = $vendedor['ciudad'];
 
 // Función para obtener el pronóstico del tiempo para 7 días
 function obtenerPronosticoTiempo($ciudad) {
-    $api_key = 'REMOVED_OPENWEATHER_API_KEY';
+    $api_key = sf_secret('openweathermap_api_key');
 
     // Codificar correctamente la ciudad
     $ciudad_codificada = urlencode($ciudad);

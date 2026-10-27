@@ -1,0 +1,16 @@
+# ---- Secretos y credenciales (nunca subir) ----
+secrets.php
+.env
+.env.*
+*.key
+*.pem
+
+# ---- Dependencias / generadas ----
+/vendor/composer/installed.php
+/vendor/composer/installed.json
+
+# ---- Logs y temporales ----
+*.log
+*.tmp
+Thumbs.db
+.DS_Store

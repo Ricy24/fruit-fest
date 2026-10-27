@@ -1,4 +1,5 @@
 <?php
+require_once __DIR__ . '/secrets_loader.php';
 session_start();
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
@@ -60,7 +61,7 @@ try {
     $mail->Host = 'smtp.office365.com';
     $mail->SMTPAuth = true;
     $mail->Username = 'frutasverdurasfruitfest@outlook.com';
-    $mail->Password = 'REMOVED_SMTP_PASSWORD';
+    $mail->Password = sf_secret('smtp.frutasverdurasfruitfest@outlook.com');
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port = 587;
 

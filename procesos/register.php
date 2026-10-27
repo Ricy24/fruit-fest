@@ -1,12 +1,13 @@
 <?php
+require_once dirname(__DIR__) . '/secrets_loader.php';
 require_once 'vendor/autoload.php';
 require_once 'Database.php'; // Asegúrate de tener este archivo que contiene la clase Database
 
 session_start();
 
 $client = new Google_Client();
-$client->setClientId('497685531346-jeihopj7ho5416gcc824mim63crbftmm.apps.googleusercontent.com');
-$client->setClientSecret('REMOVED_GOOGLE_CLIENT_SECRET');
+$client->setClientId(sf_secret('google_client_id'));
+$client->setClientSecret(sf_secret('google_client_secret'));
 $client->setRedirectUri('http://localhost/prueba/google-callback.php');
 $client->addScope('email');
 $client->addScope('profile');

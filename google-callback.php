@@ -1,4 +1,5 @@
 <?php
+require_once __DIR__ . '/secrets_loader.php';
 session_start();
 require_once 'vendor/autoload.php';
 require_once 'Database.php'; // Incluye el archivo de la clase Database
@@ -7,8 +8,8 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
 $client = new Google_Client();
-$client->setClientId('497685531346-jeihopj7ho5416gcc824mim63crbftmm.apps.googleusercontent.com');
-$client->setClientSecret('REMOVED_GOOGLE_CLIENT_SECRET');
+$client->setClientId(sf_secret('google_client_id'));
+$client->setClientSecret(sf_secret('google_client_secret'));
 $client->setRedirectUri('http://localhost/prueba/google-callback.php');
 $client->addScope('email');
 $client->addScope('profile');
@@ -54,7 +55,7 @@ if (isset($_GET['code'])) {
                 $mail->Host       = 'smtp.office365.com';           // Servidor SMTP de Outlook
                 $mail->SMTPAuth   = true;                           // Habilitar autenticación SMTP
                 $mail->Username   = 'fruitfestautomatico@outlook.com'; // SMTP username (tu correo de Outlook)
-                $mail->Password   = 'REMOVED_SMTP_PASSWORD';        // SMTP password (tu contraseña de Outlook)
+                $mail->Password   = sf_secret('smtp.fruitfestautomatico@outlook.com');        // SMTP password (tu contraseña de Outlook)
                 $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;   // Habilitar cifrado TLS
                 $mail->Port       = 587;                            // Puerto TCP para TLS
 
